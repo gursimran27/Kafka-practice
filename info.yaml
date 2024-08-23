@@ -1,0 +1,7 @@
+PRODUCERS
+TOPICS -> PARTITIONING
+CONSUMERS AND CONSUMER GROUPS -> SELF BALANCING
+
+
+
+zookeeper ->uses kakfa internally
