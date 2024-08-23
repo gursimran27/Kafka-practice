@@ -6,6 +6,10 @@ docker run -p 2181:2181 zookeeper
 - Start Kafka Container, expose PORT `9092` and setup ENV variables in second terminal.
 ```bash
 docker run -p 9092:9092 -e KAFKA_ZOOKEEPER_CONNECT=192.168.1.18:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://192.168.1.18:9092 -e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 confluentinc/cp-kafka
+```
+
+
+## Running Locally
 
 -- Run Admin
 ```bash
@@ -13,7 +17,6 @@ node admin.js
 ```
 
 
-## Running Locally
 - Create Producer
 ```bash
 node producer.js
